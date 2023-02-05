@@ -1,0 +1,46 @@
+import React from 'react';
+import {FiFacebook, FiTwitter, FiInstagram} from 'react-icons/fi'
+
+import {FooterOverlay, Newsletter} from '../../components'
+import {images} from '../../constants'
+import './Footer.css';
+
+const Footer = () => (
+  <div className='app__footer section_padding'>
+    <FooterOverlay />
+    <Newsletter />
+
+    <div className="app__footer-links">
+      <div className="app__footer-links_contact">
+        <h1 className="app__footer-headtext">Contact Us</h1>
+        <p className="p__opensans">jl. jalan tapi ga jadian</p>
+        <p className="p__opensans">+621234567890</p>
+        <p className="p__opensans">+621234567890</p>
+      </div>
+
+      <div className="app__footer-links_logo">
+        <h2 className="headtext__cormorant">Unch-Unch</h2>
+        <p className="p__opensans">"The best way to find yourself is too lose yourself in the service of others"</p>
+        <img src={images.spoon} alt="spoon-img" />
+        <div className="app__footer-links_logo-socials">
+        <FiFacebook className='app__footer-social'/>
+        <FiTwitter className='app__footer-social'/>
+        <FiInstagram className='app__footer-social'/>
+        </div>
+      </div>
+
+      <div className="app__footer-links_work">
+        <h1 className="app__footer-headtext">Working Hours</h1>
+        <p className="p__opensans">Monday-Friday</p>
+        <p className="p__opensans">08:00 am - 12:00 am</p>
+        <p className="p__opensans">Saturday-Sunday</p>
+        <p className="p__opensans">07:00 am - 11:00 am</p>
+      </div>
+    </div>
+    <div className="footer__copyrigth">
+      <p className="app__footer-headtext">2023 Unch-Unch. All Rights Reserved</p>
+    </div>
+  </div>
+);
+
+export default Footer;

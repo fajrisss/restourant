@@ -1,0 +1,5 @@
+@media screen and (max-width:650px) {
+  .app__wrapper_img img{
+    width: 100%;
+  }
+}
